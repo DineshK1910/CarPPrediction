@@ -61,5 +61,5 @@ print("the cross validation accuracy:",scores.mean())
 xtr,xts,ytr,yts=train_test_split(x,y,test_size=0.30)
 rf.fit(xtr,ytr)
 yp=rf.predict(xts)
-print("the train test split:",r2_score(yp,yts))
+print("the train test split accuracy:",r2_score(yp,yts))
    
